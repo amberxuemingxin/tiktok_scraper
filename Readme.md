@@ -5,9 +5,9 @@ A TikTok Scraper that automatically scrap the tiktok recommendation posts, gathe
 ```Readme```: The main writeup of the whole project\
 ```main.py```: The starting point of execution for this TikTok Scraper program. The program executes only when it runs\
 ```helper.py```: Define two helper functions for the main program. The main logic of getting all required information from a post is implemented in one of the helper function 'get_post_info'\
-```Dockerfile```: The text document that contains all the commands a user could call on the command line to build a docker image\
-```requirements.txt```: Stores information about all the libraries, modules, and packages in itself that are used during development\
-```result.csv```: A csv file shows the example of the result from a single run of this TikTok Scraper program. The 10 attributs are 'post_url', 'account', 'like_count', 'comment_count', 'share_count', 'caption', 'hashtags','comments', 'date_posted', 'date_collect'\
+```Dockerfile```: The text document that contains all commands to call on command line to build a docker image\
+```requirements.txt```: Stores information of all libraries and packages in itself that are used during development\
+```result.csv```: A csv file shows the example of the result from a single run of this TikTok Scraper program. The 10 attributs are 'post_url', 'account', 'like_count', 'comment_count', 'share_count', 'caption', 'hashtags','comments', 'date_posted', 'date_collect'
 
 ## Libraries and Modules:
 1. Selenium Python Module
