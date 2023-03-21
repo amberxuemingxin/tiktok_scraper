@@ -19,7 +19,7 @@ A TikTok Scraper that automatically scrap the tiktok recommendation posts, gathe
 2. Install requirements by runing the python command ```pip install -r requirements.txt```
 3. Start prgram by running ```python3 main.py```
 
-*NOTE: In the original requirement of this challenge, I should deploy everything in a Docker Container. However, I constantly ran into issues during installing the Chrome in Dockerfile. This project was completed in 3 days, but debugging the Docker image was taking me more time. After looking up almost all resources online, sadly I could not fix the issues in deployment in Docker Container. However, it works great in the normal way in local environment. I apologize for this part. 
+*NOTE: In the original requirement of this challenge, I should deploy everything in a Docker Container. However, I constantly ran into issues during installing the Chrome in Dockerfile. This project was completed in 3 days, but debugging the Docker image was taking me more time. After looking up almost all resources online, sadly I could not fix the issues in deployment in Docker Container. However, it works great in the normal way in local environment. Still, I apologize for this part :(
 
 ## Considered but discarded Approaches:
 There are actually several existing APIs in the market for developers to retrieve data from TikTok. Some of them are paid and some of them are free. However, I did not choose to use them in my project. Following are two APIs I have considered to use but finally discarded.
