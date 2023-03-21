@@ -6,12 +6,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-############
-# from selenium.webdriver.chrome.service import Service
-# from webdriver_manager.chrome import ChromeDriverManager
-# import chromedriver_autoinstaller
-
-
 # GET CAPTIONS AND HASHTAGS
 def parse_caption(tokens) -> list:
     hashtag_list = []
@@ -28,7 +22,6 @@ def parse_caption(tokens) -> list:
     title = ' '.join(title_list)
     return [title, hashtag_list]
 
-
 def get_post_info(url):
     options = webdriver.ChromeOptions() 
     # options.add_argument("--disable-gpu")
@@ -36,8 +29,6 @@ def get_post_info(url):
     # options.add_argument("--no-sandbox")
     # options.add_argument("--disable-extensions")
     # options.add_argument("--disable-dev-shm-usage")
-
-    
     options.add_argument('--no-sandbox')
     options.add_argument('--headless')
     options.add_argument("--disable-gpu")
@@ -45,14 +36,11 @@ def get_post_info(url):
     options.add_argument("--disable-infobars")
     options.add_argument("--start-maximized")
     options.add_argument("--disable-notifications")
-    
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument("--disable-setuid-sandbox")
-    #options.binary_location = '/usr/bin/google-chrome'
-
-    options.add_argument("--remote-debugging-port=9230") #################
-
-    #executable_path='/usr/local/bin/chromedriver', 
+    # options.binary_location = '/usr/bin/google-chrome'
+    # options.add_argument("--remote-debugging-port=9230")
+    # executable_path='/usr/local/bin/chromedriver', 
     driver = uc.Chrome(options=options)
     wait = WebDriverWait(driver, 20)
     driver.get(url)
@@ -67,7 +55,6 @@ def get_post_info(url):
 
     # GET ACCOUNT NAME
     account = soup.find("span", {"data-e2e": "browse-username"}).text.strip()
-    # print("account: " + account)
     res.append(account)
 
     # GET LIKE COUNT, COMMENT COUNT, SHARE COUNT
@@ -104,12 +91,9 @@ def get_post_info(url):
     comments = soup.find_all("p", {"data-e2e": "comment-level-1", "class": "tiktok-q9aj5z-PCommentText e1g2efjf6"})
     comment_list = [comment.text.strip() for comment in comments]
     res.append(comment_list)
-    
-    
-    driver.stop_client() ###############
-    driver.close() ###############
+
     driver.quit()
-    
+
     return res
 
 # USER LOGIN
