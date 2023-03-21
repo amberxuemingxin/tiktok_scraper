@@ -19,7 +19,7 @@ A TikTok Scraper that automatically scrap the tiktok recommendation posts, gathe
 2. Install requirements by runing the python command ```pip install -r requirements.txt```
 3. Start prgram by running ```python3 main.py```
 
-NOTE: In the original requirement of this challenge, I should deploy everything in a Docker Container. However, I constantly ran into issues during installing the Chrome in Dockerfile. This project was completed in 3 days, but debugging the Docker image was taking me more time. After looking up almost all resources online, sadly I could not fix the issues in deployment in Docker Container. However, it works great in the normal way in local environment. I apologize for this part. 
+*NOTE: In the original requirement of this challenge, I should deploy everything in a Docker Container. However, I constantly ran into issues during installing the Chrome in Dockerfile. This project was completed in 3 days, but debugging the Docker image was taking me more time. After looking up almost all resources online, sadly I could not fix the issues in deployment in Docker Container. However, it works great in the normal way in local environment. I apologize for this part. 
 
 ## Considered but discarded Approaches:
 There are actually several existing APIs in the market for developers to retrieve data from TikTok. Some of them are paid and some of them are free. However, I did not choose to use them in my project. Following are two APIs I have considered to use but finally discarded.
@@ -30,7 +30,7 @@ This is the official Api that TikTok provides for developers to perform analysis
 ### 2. Unofficial David Teather TikTok-Api (https://github.com/davidteather/TikTok-Api)
 This is an unofficial TikTok API wrapper developed by David Teather, and was successfully used by several hundreds of users. This api is designed to retrieve data TikTok, and cannot be used to upload content on the behalf of a user. The reason I didn't choose it is that this API has been non-functional for months since May 2022. 
 
-NOTE: Since the TikTok settings is constantly changed, almost all existing open-sourced tiktok APIs/libraries (scrapers or downloaders) are not functional anymore. 
+*NOTE: Since the TikTok settings is constantly changed, almost all existing open-sourced tiktok APIs/libraries (scrapers or downloaders) are not functional anymore. 
 
 ### 3. TikAPI (https://tikapi.io/), Trendpop (https://www.ensembledata.com/), EnsembleData (https://www.ensembledata.com/) 
 These are all PAID unofficial APIs that enable extensive features and functions. They provide a full out-of-box solution for developers for more complex tasks. The reason that I didn't choose it is that they are paid based on the number of posts I need to scrape.
