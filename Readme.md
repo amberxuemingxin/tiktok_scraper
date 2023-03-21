@@ -12,6 +12,7 @@ A TikTok Scraper that automatically scrap the tiktok recommendation posts, gathe
 ## Libraries and Modules:
 1. Selenium Python Module
 2. Beautiful Soup Python Library
+3. Pandas
 
 ## Considered but discarded Approaches:
 There are actually several existing APIs in the market for developers to retrieve data from TikTok. Some of them are paid and some of them are free. However, I did not choose to use them in my project. Following are two APIs I have considered to use but finally discarded.
